@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    background-image: url('https://docs.parrotlinux.org/img/developer-background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Roboto' serif;
+    height: 100vh;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menu {
+    background-color: white;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+.site-title,
+.site-subtitle
+{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.site-subtitle{
+    font-style: italic;
+}
