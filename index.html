@@ -4,22 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Aula 1</title>
 </head>
 
 <body>
-    <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <h1 class="site-title">Diego Nanzer Cesar</h1>
-        <h1 class="site-subtitle">Faz Tudo Developer</h1>
-    </header>
+    <div class="wrapper">
+        <header class="site-header">
+            <div class="site-logo">
+                Diego Nanzer's Profile
+            </div>
+            <div class="site-menu">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Portfólio</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="sec-content">
+            <div class="box">
+                <div class="box-main">
+                    <div class="box-main-profile">
+                        <div>
+                            <h1>Eu sou Diego Nanzer Cesar</h1>
+                        </div>
+                        <div>
+                            <h2>Desenvolvedor de Sistemas</h2>
+                        </div>
+                        <div>
+                            <a class="link-orange" href="mailto:diegonanzer@gmail.com">Enviar email</a>
+                        </div>
+                    </div>
+                    <div class="box-main-img">
+                        <figure>
+                            <img src="./src/Img/profile.png" class="imgProfile">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-main">
+                    <div class="box-main-img">
+                        <figure>
+                            <img src="./src/Img/profile.png" class="imgProfile">
+                        </figure>
+                    </div>
+                    <div class="box-main-about">
+                        <div>
+                            <h1>Sobre eu...</h1>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Desenvolvedor de Sistema</li>
+                                <li>Corredor</li>
+                                <li>Ciclista</li>
+                                <li>Nadador</li>
+                                <li>Mochileiro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Apache License Version 2.0</p>
+        </footer>
+    </div>
 </body>
+
 
 </html>

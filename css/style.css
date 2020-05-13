@@ -1,12 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+:root {
+    --main-bg-color:rgb(37,37,37);
+    --font-color-default:  rgb(198,198,198);
+    --font-color-second: rgb(255,138,0);
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 body {
-    background-image: url('https://docs.parrotlinux.org/img/developer-background.jpg');
+    background-color: rgb(33,33,33);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    font-family: 'Roboto' serif;
-    height: 100vh;
-    
+    color: var(--font-color-default);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    height: 100vh;  
 }
 
 a {
@@ -18,25 +28,162 @@ a:hover{
     text-decoration: underline;
 }
 
-.menu {
-    background-color: white;
+
+
+.wrapper{
+    /* display: flex;
+    flex-direction: column; */
+    height: 100vh;
+    margin-left: 1vw ;
+    margin-right: 1vw;
+    position: absolute;
+    width: 98vw;
 }
 
-.menu ul{
+.site-header{
+    align-items: center;
+    background-color: var(--main-bg-color);
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1);
     display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.site-header .site-logo{
+    align-self: stretch;
+    color: var(--font-color-second);
+    flex: 2;
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.site-header .site-menu{
+    flex: 2;
+}
+
+.site-menu .menu {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.site-menu .menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-menu .menu li{
+    list-style: none;
+    padding-left: 15px;
+}
+.site-menu .menu li a{
+    color: var(--font-color-default);
+}
+
+.sec-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    background-color: var(--main-bg-color);
+    margin-top: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1) ;
+}
+
+.box-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-main-profile{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     justify-content: space-around;
 }
 
-.menu li{
-    list-style: none;
-}
-.site-title,
-.site-subtitle
-{
-    color: whitesmoke;
-    text-align: center;
+.box-main-profile div{
+   margin-left: 30px;
 }
 
-.site-subtitle{
-    font-style: italic;
+.box-main-profile h1{
+    color: var(--font-color-default);
+}
+
+.box-main-profile h2{
+    color: var(--font-color-second);
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+}
+
+.link-orange{
+    background-color: rgba(255,138,0, 0.6);
+    padding: 5px;
+    color: var(--font-color-default);    
+}
+
+.box-main-about{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 20px;
+}
+.box-main-about h1{
+    color: var(--font-color-second);
+} 
+
+.box-main-about ul{
+    padding: 0;
+} 
+.box-main-about li{
+    list-style: none;
+    padding-top: 15px;
+}
+
+.box-main-img{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.box-main-img .imgProfile{
+    height: 300px;
+    width: 200px;
+}
+
+footer{
+ background-color: var(--main-bg-color);
+ display: flex;
+ justify-content: center;
+ margin-top: 30px;
+ padding: 10px 0px;
+ box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1) ;
+}
+
+@media(min-width: 800px){
+    body{
+        font-size: 16px;
+    }
+
+    .wrapper{
+        /* display: flex;
+        flex-direction: column; */
+        height: 100%;
+        margin-left: calc(10vw);
+        margin-right: calc(10vw);
+        position: absolute;
+        width: 80%;
+    }
+
+    .site-header{
+        flex-direction: row;
+    }
+
+    .box-main{
+        flex-direction: row;
+    }
 }
