@@ -11,11 +11,11 @@
   }
 
 body {
-    background-color: rgb(33,33,33);
+    background-color: black;
     background-repeat: no-repeat;
     color: var(--font-color-default);
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     height: 100vh;  
 }
 
@@ -28,29 +28,33 @@ a:hover{
     text-decoration: underline;
 }
 
-
-
-.wrapper{
-    /* display: flex;
-    flex-direction: column; */
-    height: 100vh;
-    margin-left: 1vw ;
-    margin-right: 1vw;
-    position: absolute;
-    width: 98vw;
+section{
+   padding: 7em 1em 5em 1em;
+   width: 100%;
 }
 
 .site-header{
     align-items: center;
     background-color: var(--main-bg-color);
-    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1);
+    /* box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1); */
     display: flex;
     flex-direction: column;
+    height: 6em;
+    line-height: 2em;
     padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 99;
+}
+@media(min-width: 700px){
+    .site-header{
+        flex-direction: row;
+        height: 3em;
+    }
 }
 
 .site-header .site-logo{
-    align-self: stretch;
     color: var(--font-color-second);
     flex: 2;
     font-family: 'Lobster', cursive;
@@ -64,14 +68,14 @@ a:hover{
 }
 
 .site-menu .menu {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .site-menu .menu ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .site-menu .menu li{
@@ -82,96 +86,176 @@ a:hover{
     color: var(--font-color-default);
 }
 
-.sec-content{
-    display: flex;
-    flex-direction: column;
+
+.home{
+    height: calc(100vh);
 }
 
 .box{
-    background-color: var(--main-bg-color);
-    margin-top: 15px;
-    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1) ;
+    /* background-color: var(--main-bg-color);
+    border-radius: 2em; */
+    height: 100%;
+    position: relative;
 }
 
-.box-main{
+section .arrow{
+    font-size: 1.7em;
+    color: var(--font-color-second);
+    align-self: flex-end;
+    transition: transform 500ms;
+
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    text-indent: 1.4em;
+    margin-bottom: 1.4em;
+    text-align: justify;
+}
+
+.arrow:hover{
+    transform: scale(1.1);
+}
+
+section .arrow-top{
+    position: absolute;
+}
+
+.section-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.box-main-profile{
+@media(min-width: 800px ){
+    section{
+        max-width: 800px;
+    }
+}
+
+.home{
+    align-items: center;
     display: flex;
-    flex: 1;
     flex-direction: column;
-    justify-content: space-around;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
-.box-main-profile div{
-   margin-left: 30px;
+.home img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 1s;
 }
 
-.box-main-profile h1{
-    color: var(--font-color-default);
+.home img:hover{
+    transform: scale(1.2);
 }
 
-.box-main-profile h2{
+
+.home h1{
     color: var(--font-color-second);
     font-family: 'Lobster', cursive;
     font-size: 3em;
+    /* margin-top: 20%; */
 }
 
-.link-orange{
-    background-color: rgba(255,138,0, 0.6);
-    padding: 5px;
-    color: var(--font-color-default);    
-}
-
-.box-main-about{
+.conhecimentos,
+.projetos,
+.about{
+    min-height: 100vh;
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content: start;
-    padding-top: 20px;
+    position: relative;
 }
-.box-main-about h1{
+
+.conhecimentos h1,
+.projetos h1,
+.about h1{
     color: var(--font-color-second);
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.6em;
+    font-weight: 900;
+    line-height: 2em;
 } 
 
-.box-main-about ul{
-    padding: 0;
-} 
-.box-main-about li{
-    list-style: none;
-    padding-top: 15px;
+.projetos-content{
+    display: block;
 }
 
-.box-main-img{
-    display: flex;
-    flex: 1;
+.projetos-content img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.projetos-content .right{
+    float: right;
+    margin-left: 10px;
+}
+
+.projetos-content .left{
+    float: left;
+    margin-right: 10px;
+}
+
+.conhecimento-content {
+    display: grid;
+    gap: 1em;
+    align-items: center;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+}
+
+.conhecimento-content img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+.footer{
+    align-items: center;
+    background-color: var(--main-bg-color);
+    bottom: 0;
+    display: grid;
+    font-size: 2em;
     justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 2em;
+    height: 1.2em;
+    position: fixed;
+    width: 100vw;
 }
 
-.box-main-img .imgProfile{
-    height: 300px;
-    width: 200px;
+.footer a{
+    color: whitesmoke;
+    transition: text-shadow 1s;
+}
+.footer a:active,
+.footer a:hover{
+    text-shadow: 0px 0px 10px rgb(255,255,255, 0.5);
+    
 }
 
-footer{
- background-color: var(--main-bg-color);
- display: flex;
- justify-content: center;
- margin-top: 30px;
- padding: 10px 0px;
- box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.1) ;
-}
+canvas{
+    position: fixed;
+    top: 0;
+    display:block;
+    z-index: -1;
+    opacity: 0.5;
+  }
 
+/* 
 @media(min-width: 800px){
     body{
         font-size: 16px;
     }
 
     .wrapper{
-        /* display: flex;
-        flex-direction: column; */
         height: 100%;
         margin-left: calc(10vw);
         margin-right: calc(10vw);
@@ -186,4 +270,6 @@ footer{
     .box-main{
         flex-direction: row;
     }
-}
+} */
+
+/* https://alexfelipe.github.io/aboutme/#sobre-mim */
