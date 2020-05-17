@@ -21,11 +21,15 @@ body {
 
 a {
     text-decoration: none;
+    z-index: 10;
 }
 
 a:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+h1, h2, h3, p, figure, img{
+    z-index: 9;
 }
 
 section{
@@ -191,6 +195,7 @@ section .arrow-top{
     width: 100px;
     object-fit: cover;
     border-radius: 50%;
+
 }
 
 .projetos-content .right{
@@ -229,6 +234,7 @@ section .arrow-top{
     height: 1.2em;
     position: fixed;
     width: 100vw;
+    z-index: 99;
 }
 
 .footer a{
@@ -245,7 +251,7 @@ canvas{
     position: fixed;
     top: 0;
     display:block;
-    z-index: -1;
+    z-index: 0;
     opacity: 0.5;
   }
 
