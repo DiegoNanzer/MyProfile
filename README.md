@@ -1,2 +1,2 @@
 # EstudoCSS
-Repository created for study CSS and HTML
+Repository created to improve knowledge in CSS and HTML. Developing my own profile page
