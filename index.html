@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Lobster&Source+Code+Pro&display=swap"
         rel="stylesheet">
     <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -60,7 +61,7 @@
                     <div class="timeline-img"></div>
 
                     <div class="timeline-content timeline-card">
-                        <div class="timeline-img-header">
+                        <div class="timeline-img-header" data-target="simpleModal_6" data-toggle="modal">
                             <h2>Card Title</h2>
                         </div>
                         <div class="date">25 MAY 2016</div>
@@ -238,6 +239,16 @@
         </a>
 
     </footer>
+
+    <div id="simpleModal_6" class="modal open">
+        <div class="modal-window large">
+            <span class="close" data-dismiss="modal">×</span>
+            <h3>Dismiss with [×] button</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button data-dismiss="modal">Close</button>
+        </div>
+    </div>
     <!-- count particles -->
 
 
