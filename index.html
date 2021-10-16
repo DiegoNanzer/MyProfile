@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
+    <link href="css/splide.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Lobster&Source+Code+Pro&display=swap"
         rel="stylesheet">
     <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -240,13 +241,20 @@
 
     </footer>
 
-    <div id="simpleModal_6" class="modal open">
+    <div id="simpleModal_6" class="modal ">
         <div class="modal-window large">
-            <span class="close" data-dismiss="modal">×</span>
-            <h3>Dismiss with [×] button</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button data-dismiss="modal">Close</button>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="https://picsum.photos/1000/800/?random" alt="Not found">
+                        </li>
+                        <li class="splide__slide"><img src="https://picsum.photos/1000/800/?random" alt="Not found">
+                        </li>
+                        <li class="splide__slide"><img src="https://picsum.photos/1000/800/?random" alt="Not found">
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!-- count particles -->
@@ -257,6 +265,7 @@
 
     <!-- scripts -->
     <script src="js/lib/particles.js"></script>
+    <script src="js/lib/splide.min.js"></script>
     <script src="js/app.js"></script>
 
 </body>
