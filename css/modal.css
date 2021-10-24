@@ -13,7 +13,7 @@
 
 .modal-window {
     position: relative;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     width: 50%;
     margin: 1% auto;
     padding: 20px;
