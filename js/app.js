@@ -137,12 +137,11 @@ document.addEventListener('click', function (e) {
   e = e || window.event;
   var target = e.target || e.srcElement;
 
-  e.preventDefault();
+  // e.preventDefault();
 
   if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
     if (target.hasAttribute('data-target')) {
       var m_ID = target.getAttribute('data-target');
-      console.log(m_ID);
       document.getElementById(m_ID).classList.add('open');
     }
   }
@@ -157,11 +156,18 @@ document.addEventListener('click', function (e) {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  var splide = new Splide('.splide', {
-    type: 'loop',
-    cover: true,
-    heightRatio: 0.5,
-  });
+  var elms = document.getElementsByClassName('splide');
 
-  splide.mount();
+  for (var i = 0; i < elms.length; i++) {
+    var splide = new Splide(elms[i], {
+      type: 'loop',
+      cover: true,
+      heightRatio: 0.5,
+    });
+
+    splide.mount();
+  }
+
+
+
 });

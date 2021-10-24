@@ -349,10 +349,21 @@ section .arrow-top{
     z-index: 10;
   }
   
-  .timeline-item .timeline-img-header {
+  /* .timeline-item .timeline-img-header {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
     background-size: cover;
+  } */
+
+  .img-first-memory{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/Copa1994.jpg") center center no-repeat;
+    background-size: cover;
   }
+
+  .img-corrida{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/Corrida5.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
   
   .timeline-img-header {
     height: 200px;
@@ -403,6 +414,11 @@ section .arrow-top{
       border-width: 10px 15px 10px 0;
       border-color: transparent #f5f5f5 transparent transparent;
     }
+  }
+
+  .splide__height{
+    height: 90vh;
+    background-size: contain !important;
   }
 
 /* 
