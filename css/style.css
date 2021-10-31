@@ -118,9 +118,10 @@ section .arrow{
 
 }
 
+ul,
 p {
     font-family: 'Source Code Pro', monospace;
-    text-indent: 1.4em;
+    /* text-indent: 1.4em; */
     margin-bottom: 1.4em;
     text-align: justify;
     color: var(--font-color-default);
@@ -321,7 +322,8 @@ section .arrow-top{
   }
 
   .timeline-content h2, 
-  .timeline-content p{
+  .timeline-content p,
+  .timeline-content ul{
    color: black;
   }
 
@@ -341,6 +343,7 @@ section .arrow-top{
   .timeline-card {
     padding: 0 !important;
   }
+  .timeline-card ul,
   .timeline-card p {
     padding: 0 20px;
   }
@@ -354,16 +357,50 @@ section .arrow-top{
     background-size: cover;
   } */
 
+  .img-family-memory{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/familia.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
   .img-first-memory{
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/Copa1994.jpg") center center no-repeat;
     background-size: cover;
   }
 
-  .img-corrida{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/Corrida5.jpg") center center no-repeat;
+  .img-senai-memory  {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/SENAI_GRAFICA.jpg") center center no-repeat;
     background-size: cover;
   }
 
+  .img-corrida-memory{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/Corrida5.jpg") center center no-repeat;
+    background-size: cover;
+  }
+ 
+  .img-ftt-memory{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/FTT_logo.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  .img-datamace-memory{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/Datamace.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  .img-bc-memory{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/bc.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  .img-eua-memory{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/EUA.JPG") center center no-repeat;
+    background-size: cover;
+  }
+  
+  .img-bonito-memory{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./../src/Img/bonito.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  
   
   .timeline-img-header {
     height: 200px;
